@@ -12,7 +12,7 @@ namespace Tyuiu.ChepurnykhSR.Sprint2.Task6.V8.Test
         public void ValidFindDateOfPreviousDay()
         {
             DataService ds = new DataService();
-            Assert.AreEqual("4.10.2023", ds.FindDateOfPreviousDay(2023, 10, 5));
+            Assert.AreEqual("4.10", ds.FindDateOfPreviousDay(10, 5));
         }
     }
 }

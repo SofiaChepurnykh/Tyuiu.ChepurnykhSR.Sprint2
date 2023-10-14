@@ -10,7 +10,7 @@ namespace Tyuiu.ChepurnykhSR.Sprint2.Task6.V8.Lib
 {
     public class DataService : ISprint2Task6V8
     {
-        public string FindDateOfPreviousDay(int g, int m, int n)
+        public string FindDateOfPreviousDay(int m, int n)
         {
             string res;
             switch (n)
@@ -21,7 +21,6 @@ namespace Tyuiu.ChepurnykhSR.Sprint2.Task6.V8.Lib
                         case 1:
                             n = 31;
                             m = 12;
-                            g--;
                             break;
                         default:
                             m--;
@@ -49,13 +48,8 @@ namespace Tyuiu.ChepurnykhSR.Sprint2.Task6.V8.Lib
                     n--;
                     break;
             }
-            res = ($"{n}.{m}.{g}");
+            res = ($"{n}.{m}");
             return res;
-        }
-
-        public string FindDateOfPreviousDay(int m, int n)
-        {
-            throw new NotImplementedException();
         }
     }
 }
