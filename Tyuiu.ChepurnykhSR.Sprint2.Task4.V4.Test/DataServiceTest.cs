@@ -1,9 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-using Tyuiu.ChepurnykhSR.Sprint2.Task3.V18.Lib;
+using Tyuiu.ChepurnykhSR.Sprint2.Task4.V4.Lib;
 
-namespace Tyuiu.ChepurnykhSR.Sprint2.Task3.V18.Test
+namespace Tyuiu.ChepurnykhSR.Sprint2.Task4.V4.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -25,26 +25,6 @@ namespace Tyuiu.ChepurnykhSR.Sprint2.Task3.V18.Test
             double x = 0;
             double res = ds.Calculate(x);
             double wait = 0.75;
-            Assert.AreEqual(wait, res);
-        }
-
-        [TestMethod]
-        public void ValidCondition3()
-        {
-            DataService ds = new DataService();
-            double x = 1;
-            double res = ds.Calculate(x);
-            double wait = 2;
-            Assert.AreEqual(wait, res);
-        }
-
-        [TestMethod]
-        public void ValidCondition4()
-        {
-            DataService ds = new DataService();
-            double x = -30;
-            double res = ds.Calculate(x);
-            double wait = -329.967;
             Assert.AreEqual(wait, res);
         }
     }
