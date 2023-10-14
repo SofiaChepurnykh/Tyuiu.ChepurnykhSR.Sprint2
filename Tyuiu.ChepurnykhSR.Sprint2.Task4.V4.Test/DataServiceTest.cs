@@ -13,8 +13,9 @@ namespace Tyuiu.ChepurnykhSR.Sprint2.Task4.V4.Test
         {
             DataService ds = new DataService();
             double x = 2;
-            double res = ds.Calculate(x);
-            double wait = 36;
+            double y = 10;
+            double res = ds.Calculate(x, y);
+            double wait = 20.909;
             Assert.AreEqual(wait, res);
         }
 
@@ -22,9 +23,10 @@ namespace Tyuiu.ChepurnykhSR.Sprint2.Task4.V4.Test
         public void ValidCondition2()
         {
             DataService ds = new DataService();
-            double x = 0;
-            double res = ds.Calculate(x);
-            double wait = 0.75;
+            double x = 2;
+            double y = 2;
+            double res = ds.Calculate(x, y);
+            double wait = 7.584;
             Assert.AreEqual(wait, res);
         }
     }
